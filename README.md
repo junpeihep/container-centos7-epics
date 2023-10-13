@@ -1,9 +1,10 @@
 # docker-centos7-epics-base
-Docker image to have EPICS-base on CentOS7
+Docker image of EPICS-base on CentOS7
 
 This image is expected to become the base-image for containers with EPICS-based application.
+For detailed information about EPICS itself, visit https://epics.anl.gov/.
 
-The image is available as [centos7-epics-base on Docker Hub](https://hub.docker.com/r/junpeihep/centos7-epics-base).
+The image is also available as [centos7-epics-base on Docker Hub](https://hub.docker.com/r/junpeihep/centos7-epics-base).
 So you can pull the image as follows:
 ```bash
 docker pull junpeihep/centos7-epics-base

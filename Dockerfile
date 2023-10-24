@@ -31,7 +31,7 @@ RUN mkdir ${WORK_DIR} && \
 # more environment variables for EPICS
 ENV EPICS=/usr/local/epics \
     EPICS_HOST_ARCH=linux-x86_64 \
-    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/epics/base-3.15.8/bin/linux-x86_64:$PATH
+    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/epics/base-${EPICS_VER}/bin/linux-x86_64
 
 # expose the ports
 EXPOSE 5064/tcp 5065/tcp

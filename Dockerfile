@@ -7,7 +7,7 @@ FROM centos:centos7
 LABEL maintainer="junpeihep <junpeihep@gmail.com>"
 
 # Version info
-LABEL version="centos7-epics3.15.8"
+LABEL version="centos7-epics7.0.7"
 
 # dnf update
 RUN yum -y update
@@ -17,7 +17,7 @@ RUN yum -y install wget make perl gcc-c++
 
 # environment variable for EPICS
 ENV WORK_DIR=/usr/local/epics \
-    EPICS_VER=3.15.8
+    EPICS_VER=7.0.7
 
 # install EPICS
 RUN mkdir ${WORK_DIR} && \
